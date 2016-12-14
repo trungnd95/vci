@@ -12,9 +12,9 @@ require "capistrano/deploy"
 # require "capistrano/scm/svn"
 # install_plugin Capistrano::SCM::Svn
 # or
-https://github.com/capistrano/rbenv
-require "capistrano/scm/git"
-install_plugin Capistrano::SCM::Git
+# https://github.com/capistrano/rbenv
+# require "capistrano/scm/git"
+# install_plugin Capistrano::SCM::Git
 
 # Include tasks from other gems included in your Gemfile
 #
@@ -28,7 +28,7 @@ install_plugin Capistrano::SCM::Git
 #
 require "capistrano/rbenv"
 set :rbenv_type, :user # or :system, depends on your rbenv setup
-set :rbenv_ruby, '2.0.0-p112'
+set :rbenv_ruby, '2.3.1-p112'
 require "capistrano/bundler"
 require "capistrano/rails"
 require "capistrano/passenger"
