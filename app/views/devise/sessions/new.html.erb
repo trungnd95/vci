@@ -1,0 +1,54 @@
+<div id="module1" class="ModuleWrapper container">
+  <div id="login-default1" class="login-default">
+    <div class="small-login-form" style="padding:10px;">
+      <div class="containerForm">
+        <div class="row">
+          <div class="form-left col-lg-6 col-md-6 col-sm-6">
+            <div class="login-form panel panel-default panel-common">
+              <div class="panel-heading">
+                <h4 class="panel-title">Đăng nhập tài khoản</h4>
+              </div>
+              <div class="panel-body">
+                <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="input-row">
+                      <%= f.email_field :email, autofocus: true, placeholder: 'E-mail', class: "form-control" %><i class="icons fa fa-user"></i>
+                    </div>
+                    <div class="input-row">
+                      <%= f.password_field :password, autocomplete: "off", class: "form-control", placeholder: "Mật khẩu"%>
+                      <i class="icons fa fa-lock"></i>
+                    </div>
+                  </div>
+                </div>
+                <label class="checkbox remember-checkbox">
+                <%= f.check_box :remember_me %> Nhớ tôi lại </label>
+                <div class="row">
+                  <div class="col-lg-6 col-md-6 col-sm-6 text-left">
+                     <%= f.submit "Đăng nhập", class: "btn btn-success" %>
+                  </div>
+                </div>
+                <% end %>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-right col-lg-6 col-md-6 col-sm-6">
+            <div class="about panel panel-default panel-common">  <div class="panel-heading">
+              <h4 class="panel-title">Giới thiệu</h4>
+            </div>
+            <div class="panel-body">
+              <p>Introduction area</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  #login-default1 .container{  max-width:100%;}
+</style>
+</div>
+

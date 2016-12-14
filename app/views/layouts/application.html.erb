@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vci</title>
+    <meta charset="utf8" />
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  <body>
+    <div class="region-top"></div>
+    <div id="whole-page" class="container">
+      <div id="page-header"></div>
+      <div id="page-content">
+        <div id="module4" class="ModuleWrapper">
+          <%= render 'partials/header' %>
+        </div>
+        <% unless current_user.nil? %>
+          <%= render 'partials/menu'%>
+        <% end %>
+        <%= yield %>
+      </div>
+      <%= render 'partials/footer' %>
+      <div id="backtotop" style="display: block;">Back to Top</div>
+    </div>
+      <div class="region-bottom"></div>
+      <div id="footer-editer"></div>
+  </body>
+</html>

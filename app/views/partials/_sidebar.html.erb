@@ -1,0 +1,25 @@
+<div id="module-sidebar" class="column-search column-sidebar">
+  <div class="search-filter">
+    <div class="block-text">
+      <div class="block-text-content">
+        <div class="l-columns-criteria">
+          <h3 class="title4">
+            Tổng : <span class="hitCount"><%= @publications.total_count %></span>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="refine-item refine-item-open">
+      <h4 class="refine-title">
+        <a href="javascript:;" onclick="collapse($(this));">Tác giả nổi bật</a>
+      </h4>
+      <div class="refine-content">
+        <% @authors.each do |auth| %>
+          <div class="refine-subitem-list">
+              <p class=""><%= link_to auth[0].name, publications_path(auth: auth[0].name) %>(<%= auth[1] %>)</p>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

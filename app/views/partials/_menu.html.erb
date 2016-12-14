@@ -1,0 +1,43 @@
+<div id="module5" class="ModuleWrapper" modulerootid="1469090">
+  <nav id="menu5" class="main-menu navigation-menu-type-21">
+    <div class="navbar navbar-default relative ">
+      <div class="container-fluid">
+        <div class="flex-flow-rw justify-content-fs  align-items-fs">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="http://vci.vnu.edu.vn/" title="Vietnam Citation Index">
+            </a>
+          </div>
+          <div id="bs-navbar-collapse-1" class="collapse navbar-collapse">
+            <div class="">
+              <ul class="nav navbar-nav" data-orientation="horizontal">
+                <!-- <li class="item-block   " data-id="1472486">
+                  <a href="/" title="Tìm kiếm">
+                    <span>Tìm kiếm</span>
+                  </a>
+                </li> -->
+                <li class="item-block active  " data-id="1469276">
+                  <%= link_to 'Trang chủ', root_path %>
+                </li>
+               <!--  <li class="item-block   " data-id="1469151">
+                  <a href="/journals" title="Danh sách tạp chí">  <span>Danh sách tạp chí</span>  </a>
+                </li> -->
+              </ul>
+            </div>
+            <ul class="settuser list-login">
+            <li class="useritem"><a class="text-color-2" href="#"><%= current_user.email %></a></li> <li>|</li>
+              <li class="useritem">
+                <%= link_to 'Thoát', destroy_user_session_path, method: :delete  %>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

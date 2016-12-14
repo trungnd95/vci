@@ -1,0 +1,37 @@
+#whole-page {
+  #page-content {
+    min-height: 560px;
+    .publications-page {
+      margin-top: 3rem;
+      .search-area {
+        margin-bottom: 2rem;
+      }
+      .chart {
+        margin-bottom: 2rem;
+      }
+    }
+  }
+
+  #page-footer {
+    padding-top: 2rem;
+    border-top: 2px solid #ecf0f1;
+  }
+
+}
+
+.search-form {
+  .form-control {
+    display: inline-block !important;
+  }
+  #data {
+    width: 50%;
+  }
+  #type {
+    width: 30%;
+  }
+  .search-button {
+    width: 18%;
+    margin-top: -5px;
+  }
+}
+
