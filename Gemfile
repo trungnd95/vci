@@ -56,3 +56,4 @@ group :development do
   gem 'capistrano-rbenv', '~> 2.1'
   gem 'capistrano-passenger', '~> 0.2.0'
 end
+gem 'bundler', '~> 1.13', '>= 1.13.6'

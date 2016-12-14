@@ -250,6 +250,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootstrap-kaminari-views
+  bundler (~> 1.13, >= 1.13.6)
   byebug
   capistrano (~> 3.7)
   capistrano-passenger (~> 0.2.0)
