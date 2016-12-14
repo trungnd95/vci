@@ -1,6 +1,8 @@
 development:
   type: server_db
   url: http://localhost:7474
+  username: neo4j
+  password: v9a3bUhtJVwVQvb72sigW9tj$+,2/oa??E4c@(NXtg*V37&7LD
 test:
   type: server_db
   url: http://localhost:7575

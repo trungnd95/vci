@@ -1,6 +1,16 @@
 require_relative 'boot'
 # require "rails"
-require 'rails/all'
+%w(
+  neo4j
+  action_controller
+  action_mailer
+  sprockets
+).each do |framework|
+  begin
+    require "#{framework}/railtie"
+  rescue LoadError
+  end
+end
 # Pick the frameworks you want:
 require "active_model/railtie"
 require "active_job/railtie"
